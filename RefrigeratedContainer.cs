@@ -17,4 +17,15 @@ public class RefrigeratedContainer : Container
 
     public double MaintainedTemperature { get; }
     public ProductType ProductType { get; }
+    
+    public override string ToString()
+    {
+        return $"Container Heigh: {Height}," +
+               $" Depth: {Depth}," +
+               $" Weight: {TareWeight} kg," +
+               $" Max Payload: {MaxPayload}," +
+               $" Maintained Temperature: {MaintainedTemperature}," +
+               $" Product Type: {ProductType}" +
+               $" Container Type: {ContainerType}";
+    }
 }
