@@ -33,4 +33,13 @@ public abstract class HazardousContainer : Container, IHazardNotifier
     {
         Console.WriteLine($"HazardousContainer {SerialNumber}" + $"\nMessage: {message}");
     }
+    
+    public override string ToString()
+    {
+        return $"Container Heigh: {Height}," +
+               $" Depth: {Depth}," +
+               $" Weight: {TareWeight} kg," +
+               $" Max Payload: {MaxPayload}," +
+               $" Container typle: {ContainerType}";
+    }
 }

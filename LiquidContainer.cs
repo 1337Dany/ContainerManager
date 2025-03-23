@@ -25,4 +25,13 @@ public class LiquidContainer : HazardousContainer
     public bool IsCargoHazardous { get; }
 
     protected override bool CanLoadCargo(double mass) => CargoMass + mass <= _allowedMaxPayload;
+    public override string ToString()
+    {
+        return $"Container Heigh: {Height}," +
+               $" Depth: {Depth}," +
+               $" Weight: {TareWeight} kg," +
+               $" Max Payload: {MaxPayload}," +
+               $" Is Hazardous: {IsCargoHazardous}," +
+               $" Container typle: {ContainerType}";
+    }
 }

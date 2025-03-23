@@ -26,6 +26,7 @@ public abstract class Container
     public double MaxPayload { get; set; }
     public string SerialNumber { get; set; }
     public double CargoMass { get; set; }
+    public char ContainerType { get; set; }
 
     public virtual void LoadCargo(double mass)
 

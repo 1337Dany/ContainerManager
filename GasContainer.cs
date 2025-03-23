@@ -21,4 +21,14 @@ public class GasContainer : HazardousContainer
     public double Pressure { get; }
     
     public override void EmptyCargoMass() => CargoMass += 0.05;
+    
+    public override string ToString()
+    {
+        return $"Container Heigh: {Height}," +
+               $" Depth: {Depth}," +
+               $" Weight: {TareWeight} kg," +
+               $" Max Payload: {MaxPayload}," +
+               $" Pressure: {Pressure}," +
+               $" Container typle: {ContainerType}";
+    }
 }
