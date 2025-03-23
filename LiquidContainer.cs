@@ -8,13 +8,13 @@ public class LiquidContainer : HazardousContainer
         double height,
         double depth,
         double tareWeight,
-        double masPayload,
+        double maxPayload,
         bool isCargoHazardous)
         : base(
             height,
             depth,
             tareWeight,
-            masPayload, 
+            maxPayload, 
             'L')
     {
         isCargoHazardous = isCargoHazardous;

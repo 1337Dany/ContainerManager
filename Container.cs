@@ -9,14 +9,14 @@ public abstract class Container
         double height,
         double depth,
         double tareWeight,
-        double masPayload,
+        double maxPayload,
         char containerType
     )
     {
         Height = height > 0 ? height : throw new ArgumentException("Height must be greater than zero");
         Depth = depth > 0 ? depth : throw new ArgumentException("Depth must be greater than zero");
         TareWeight = tareWeight > 0 ? tareWeight : throw new ArgumentException("TareWeight must be greater than zero");
-        MaxPayload = masPayload > 0 ? masPayload : throw new ArgumentException("MaxPayload must be greater than zero");
+        MaxPayload = maxPayload > 0 ? maxPayload : throw new ArgumentException("MaxPayload must be greater than zero");
         SerialNumber = $"{ContierPrefix}-{containerType}-{_nextSerialNumber++}";
     }
 

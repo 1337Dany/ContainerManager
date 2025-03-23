@@ -6,13 +6,13 @@ public class GasContainer : HazardousContainer
         double height,
         double depth,
         double tareWeight,
-        double masPayload,
+        double maxPayload,
         double pressure)
         : base(
             height,
             depth,
             tareWeight,
-            masPayload,
+            maxPayload,
             'G')
     {
         Pressure = pressure > 0 ? pressure : throw new ArgumentOutOfRangeException("Pressure must be greater than zero");
